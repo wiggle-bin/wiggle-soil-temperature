@@ -1,0 +1,3 @@
+# Development dependencies
+-e .  # This assumes your project is in the current directory
+black
