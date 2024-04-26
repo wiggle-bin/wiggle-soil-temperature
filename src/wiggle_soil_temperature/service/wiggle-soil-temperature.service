@@ -1,9 +1,0 @@
-[Unit]
-Description=WiggleSoilTemperature service
-
-[Service]
-WorkingDirectory=%h
-ExecStart=%h/Development/wiggle-soil-temperature/.venv/bin/wiggle-soil-temperature
-
-[Install]
-WantedBy=default.target

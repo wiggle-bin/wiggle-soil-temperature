@@ -9,6 +9,10 @@ BASE_FOLDER = Path.home() / "WiggleBin"
 DATA_FOLDER = BASE_FOLDER / "sensor-data"
 DATA_FILE = DATA_FOLDER / "soil-temperature.csv"
 
+def create_directory():
+    os.makedirs(DATA_FOLDER, exist_ok=True)
+
+create_directory()
 
 def main(decimals=1):
     """Reads the temperature from a 1-wire device"""
