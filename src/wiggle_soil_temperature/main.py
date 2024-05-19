@@ -47,7 +47,7 @@ def main(decimals=1):
                 for data in sensor_data:
                     writer.writerow(data)
 
-            time.sleep(300000)
+            time.sleep(5 * 60)
         except KeyboardInterrupt:
             break
 
